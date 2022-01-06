@@ -13,8 +13,6 @@ app.get('/', function(req,res){
     res.send('Hello from the server and from Harsh ! ')
 })
 
-//creating the end point to which our angular app will post the form data to
-//req.body contains the userdata that was submitted by the angular application 
 app.post('/enroll',function(req,res){
     console.log(req.body);
     res.status(200).send({"message":"Date received! "})
